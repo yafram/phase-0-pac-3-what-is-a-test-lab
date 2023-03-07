@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json --bail"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-functions-lab#readme",
   "devDependencies": {
+    "@types/expect": "^24.3.0",
     "chai": "^3.5.0",
     "expect": "^1.20.2",
     "jsdom": "^9.0.0",
